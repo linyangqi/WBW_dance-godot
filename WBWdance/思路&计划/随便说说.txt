@@ -1,0 +1,6 @@
+ps：
+目前这只是test文件……多试试吧
+不过当然也可以一鼓作气给做完了
+
+第一个目标：想办法让WBW动起来吧
+（或许参考些fps domo的？……或者好像有些blend shape之类？——blendshape不太适合WBW吧？）
