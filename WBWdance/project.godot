@@ -10,6 +10,6 @@ config_version=5
 
 [application]
 
-config/name="WBWdance_test"
+config/name="WBWdance"
 config/features=PackedStringArray("4.0", "Vulkan Clustered")
 config/icon="res://icon.png"

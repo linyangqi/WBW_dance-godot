@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://febuluenaf0c"]
+
+[ext_resource type="SpriteFrames" uid="uid://bblkju6s4vnn8" path="res://characters/wbw/head/eyes/eyes_animate.tres" id="1_fayq5"]
+
+[sub_resource type="Texture2D" id="Texture2D_5fkwi"]
+resource_local_to_scene = false
+resource_name = ""
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t5kqr"]
+albedo_color = Color(0, 0, 0, 1)
+metallic = 0.5
+roughness = 0.3
+clearcoat_enabled = true
+detail_mask = SubResource("Texture2D_5fkwi")
+
+[sub_resource type="SphereMesh" id="SphereMesh_x80pk"]
+material = SubResource("StandardMaterial3D_t5kqr")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_rws41"]
+
+[node name="Head" type="CharacterBody3D"]
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_x80pk")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_rws41")
+
+[node name="Face" type="Node3D" parent="."]
+
+[node name="Exyes" type="Node3D" parent="Face"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.48)
+
+[node name="EyeLeft" type="AnimatedSprite3D" parent="Face/Exyes"]
+transform = Transform3D(0.193185, 0, -0.0517638, 0, 0.2, 0, 0.0517638, 0, 0.193185, 0.15, 0, 0)
+frames = ExtResource("1_fayq5")
+
+[node name="EyeRight" type="AnimatedSprite3D" parent="Face/Exyes"]
+transform = Transform3D(-0.193185, 0, -0.0517638, 0, 0.2, 0, 0.0517638, 0, -0.193185, -0.15, 0, 0)
+frames = ExtResource("1_fayq5")

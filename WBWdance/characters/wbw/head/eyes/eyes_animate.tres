@@ -1,0 +1,11 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://bblkju6s4vnn8"]
+
+[ext_resource type="Texture2D" uid="uid://dpog0ems6cflw" path="res://characters/wbw/head/eyes/eye.png" id="1_c8vaw"]
+
+[resource]
+animations = [{
+"frames": [ExtResource("1_c8vaw")],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]

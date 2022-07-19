@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://buvim6crhpbys"]
+
+[ext_resource type="PackedScene" uid="uid://febuluenaf0c" path="res://characters/wbw/head/wbw_head.tscn" id="1_gvd6q"]
+
+[node name="WBW" type="Node3D"]
+
+[node name="Head" parent="." instance=ExtResource("1_gvd6q")]
+
+[node name="Branches" type="Node" parent="."]
+
+[node name="Left" type="Node3D" parent="Branches"]
+
+[node name="Right" type="Node3D" parent="Branches"]

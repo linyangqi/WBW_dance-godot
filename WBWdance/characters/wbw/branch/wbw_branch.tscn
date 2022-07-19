@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://duqq6kw8jfmmx"]
+
+[node name="Branch" type="CharacterBody3D"]
